@@ -28,12 +28,12 @@ def password_ok(pwd):
 
     # check each character
     for i in range(0, minlen):
-        sleep(0.5)
         if password[i] != pwd[i]:
             # first characters which do not
             # match indicate the two given
             # strings are not equal
             return False
+        sleep(0.5)
     # all characters matched
     return True
 
