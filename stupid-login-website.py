@@ -34,7 +34,7 @@ def password_ok(pwd):
             # match indicate the two given
             # strings are not equal
             return False
-        sleep(0.5)
+        sleep(0.1)
     # all characters matched
     return True
 
