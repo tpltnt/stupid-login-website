@@ -11,6 +11,10 @@ vector (along with credential sniffing).
 
 * install flask: ```pip3 install flask```
 
+# run the website
+* *either*: ```python3 stupid-login-website.py```
+* *or*: ```chmod +x stupid-login-website.py && ./stupid-login-website.py```
+
 # resources
 * [flask](http://flask.pocoo.org/)
 * [wikipedia: timing attack](https://en.wikipedia.org/wiki/Timing_attack)
