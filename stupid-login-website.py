@@ -12,8 +12,7 @@ app = Flask(__name__)
 
 def password_ok(pwd):
     """
-    The password check with a timing sidechannel
-    and another vulnerability (left as an excercise).
+    The password check with a timing sidechannel.
 
     :param pwd: password to check
     :type pwd: str
@@ -21,13 +20,15 @@ def password_ok(pwd):
     """
     password = "thisisstupid"
 
-    # only check shorter (sub)string
-    minlen = len(password)
-    if len(pwd) < minlen:
-        minlen = len(pwd)
+    if len(pwd) < len(password):
+        # given password too short
+        # to be correct
+        return False
+
+    sleep(0.05)  # delay of length comparision
 
     # check each character
-    for i in range(0, minlen):
+    for i in range(0, len(password)):
         if password[i] != pwd[i]:
             # first characters which do not
             # match indicate the two given
