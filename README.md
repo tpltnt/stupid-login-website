@@ -13,4 +13,4 @@ vector (along with credential sniffing).
 
 # resources
 * [flask](http://flask.pocoo.org/)
-
+* [wikipedia: timing attack](https://en.wikipedia.org/wiki/Timing_attack)
